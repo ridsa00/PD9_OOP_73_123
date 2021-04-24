@@ -61,20 +61,8 @@ public class Task1 {
     }
      static boolean findSubString(String a)
     {
-        boolean flag=false;
-        for(int i=0; i<a.length(); i++)
-        {
-            if(a=="the")
-            {
-                System.out.println("the is part of string");
-                flag=true;
-            }
-            else
-            {
-                flag=false;
-            }
-              }
-        return flag;
+      System.out.println(a.contains("the"));
+       return true;
         
     }
     
