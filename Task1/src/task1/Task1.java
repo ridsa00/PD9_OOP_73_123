@@ -35,13 +35,14 @@ public class Task1 {
         for(int i=0; i<a.length(); i++)
         {
             ch[i]= a.charAt(i);
-            if(ch =='a'|| ch=='e'|| ch=='i' || ch=='o'|| ch=='u'|| ch=='')
+            if(ch[i] == 'a'|| ch[i]=='e'|| ch[i]=='i' || ch[i]=='o'|| ch[i]=='u')
             {
                 counter++;
             }
-            return counter;
+            
                     
         }
+        return counter;
     }
             
     public static void main(String[] args) {
@@ -50,8 +51,8 @@ public class Task1 {
         Scanner obj=new Scanner(System.in);
         
         String a=obj.nextLine();
-        System.out.println(wordCounter(a));
-        System.out.println(vowelCounter(a));
+        System.out.println("word counter of given string gives:"+wordCounter(a));
+        System.out.println("vowel counter of given string gives"+vowelCounter(a));
         
     }
     
