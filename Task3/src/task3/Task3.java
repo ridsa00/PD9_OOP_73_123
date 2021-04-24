@@ -17,7 +17,7 @@ public class Task3 {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("task3");
-        System.out.println("task3....");
+        System.out.println("task3////");
     }
     
 }
