@@ -5,9 +5,12 @@
  */
 package task3;
 
+import java.util.Scanner;
+ 
+
 /**
  *
- * @author DELL
+ * @author ridsa(2020-CS-73)
  */
 public class Task3 {
 
@@ -16,8 +19,25 @@ public class Task3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("task3");
-        System.out.println("task3////");
+        
+        Scanner obj = new Scanner(System.in);
+         System.out.println("Enter your string whose extra spaces,that you want to remove: ");
+        String str = obj.nextLine();
+        String newStr = ridMultipleBlank(str);
+        
+         System.out.println("New string with single spaces is: " + newStr); 
+         obj.close();
+         
     }
     
+    /**
+     *
+     * @param s
+     * @return
+     */
+    public static String  ridMultipleBlank(String s){
+        s = s.replaceAll("( )+", " ");
+        return s;
+    }
+ 
 }
