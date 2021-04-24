@@ -28,6 +28,21 @@ public class Task1 {
         }
          return counter;       
     }
+    static int vowelCounter(String a)
+    {
+        int counter=0;
+        char ch[]=new char[a.length()];
+        for(int i=0; i<a.length(); i++)
+        {
+            ch[i]= a.charAt(i);
+            if(ch =='a'|| ch=='e'|| ch=='i' || ch=='o'|| ch=='u'|| ch=='')
+            {
+                counter++;
+            }
+            return counter;
+                    
+        }
+    }
             
     public static void main(String[] args) {
         // TODO code application logic here
@@ -36,6 +51,8 @@ public class Task1 {
         
         String a=obj.nextLine();
         System.out.println(wordCounter(a));
+        System.out.println(vowelCounter(a));
+        
     }
     
 }
