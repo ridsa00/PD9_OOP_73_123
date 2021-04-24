@@ -73,6 +73,7 @@ public class Task1 {
         Scanner obj=new Scanner(System.in);
         
         String a=obj.nextLine();
+        
         System.out.println("word counter of given string gives:"+wordCounter(a));
         System.out.println("vowel counter of given string gives:"+vowelCounter(a));
         System.out.println("punctuation counter of given string gives:"+punctuationCounter(a));

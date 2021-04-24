@@ -32,6 +32,7 @@ public class Task2{
         
         String b=obj.nextLine();
         
+        //calling the function
         displayVertical(b);
         
     
