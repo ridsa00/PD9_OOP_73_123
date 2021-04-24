@@ -9,15 +9,33 @@ package task1;
  *
  * @author DELL
  */
+import java.util.Scanner;
 public class Task1 {
 
     /**
      * @param args the command line arguments
      */
+    static int wordCounter(String a)
+    {
+        int counter=0;
+        char ch[]=new char[a.length()];
+        for(int i=0; i<a.length(); i++)
+        {
+            ch[i]= a.charAt(i);  
+                if( ((i>0)&&(ch[i]!=' ')&&(ch[i-1]==' ')) || ((ch[0]!=' ')&&(i==0)) )  
+                    counter++;  
+            
+        }
+         return counter;       
+    }
+            
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("task1");
-        System.out.println("hellloww");
+        System.out.println("enter the string");
+        Scanner obj=new Scanner(System.in);
+        
+        String a=obj.nextLine();
+        System.out.println(wordCounter(a));
     }
     
 }
