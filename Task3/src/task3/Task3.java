@@ -37,7 +37,7 @@ public class Task3 {
                 System.out.println("New string with single spaces is: " + newStr);
                 
              }
-             if(input == 2){
+             else if(input == 2){
                 
                  obj = new Scanner(System.in);
                  System.out.println("Enter your string whose integers you want to remove: ");
@@ -47,6 +47,16 @@ public class Task3 {
                  System.out.println("New string without integers is: " + newStr2);
                  
              }
+             
+              else if(input == 3){
+                
+                 obj = new Scanner(System.in);
+                 System.out.print("Enter your string whom you want to  be encrypted: ");
+                 String str2 = obj.nextLine();
+                 String newStr3 = stringEncryption(str2);
+                 
+             }
+             
         
     }
     
@@ -65,5 +75,31 @@ public class Task3 {
         return s;
     }
     
+   static String stringEncryption(String s){
+        int key = 6;
+        char[] chars = s.toCharArray();
+        System.out.print("Encrypted string is: " );
+        for(char c : chars){
+           c += key;
+           System.out.print(c);         
+        }
+         System.out.print("\n");
+         return s;
+    }
     
+   /* static String stringEncryption(String s){
+      //  int key = 5;
+       // char[] chars = s.toCharArray();
+       String name = null;
+        System.out.print("Encrypted string is: " );
+        for( int i=0 ; i<s.length() ; i++){
+        // i = s.charAt(i)+5;
+       //  i = i+ s.charAt(i);
+       s = s +(s.charAt(i)+5);
+           System.out.print(s);         
+        }
+         System.out.print("\n");
+         return s;
+}*/
 }
+
