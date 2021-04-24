@@ -59,6 +59,25 @@ public class Task1 {
         return counter;
         
     }
+     static boolean findSubString(String a)
+    {
+        boolean flag=false;
+        for(int i=0; i<a.length(); i++)
+        {
+            if(a=="the")
+            {
+                System.out.println("the is part of string");
+                flag=true;
+            }
+            else
+            {
+                flag=false;
+            }
+              }
+        return flag;
+        
+    }
+    
             
     public static void main(String[] args) {
         // TODO code application logic here
@@ -67,8 +86,9 @@ public class Task1 {
         
         String a=obj.nextLine();
         System.out.println("word counter of given string gives:"+wordCounter(a));
-        System.out.println("vowel counter of given string gives"+vowelCounter(a));
-        
+        System.out.println("vowel counter of given string gives:"+vowelCounter(a));
+        System.out.println("punctuation counter of given string gives:"+punctuationCounter(a));
+        System.out.println("whether the is part of string:"+ findSubString(a));
         
     }
     
