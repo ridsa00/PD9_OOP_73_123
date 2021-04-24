@@ -7,39 +7,39 @@ package task2;
 
 /**
  *
- * @author DELL
+ * @author hp
  */
 import java.util.Scanner;
 
-public class Task2 {
+public class Task2{
+  public static void displayVertical(String b){
+
+    if(b != null && !"".equals(b)){
+        int stringLength = b.length();
+
+        for (int i=0; i<stringLength; i++){
+            System.out.println(b.charAt(i));
+        }
+
+    }
+
+}
+  public static void main(String [] args){
       
-     public static void displayVertical(String x[]){
-         
-         
-         for(String string:x){
-             System.out.println(string);
-         }
-     }
-             
-     /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        
-        System.out.println("enter the sentence");
+    System.out.println("enter the sentence");
+    
         Scanner obj=new Scanner(System.in);
         
         String b=obj.nextLine();
         
-        String x[]=b.split(" ");
-        for(int i=0; i<x.length; i++)
-        {
-            System.out.println(x[i]);
-        }
+        displayVertical(b);
         
-        //calling the method display vertical here
-        displayVertical(x);
-        }
     
+ 
+  }
 }
+      
+    
+        
+    
+

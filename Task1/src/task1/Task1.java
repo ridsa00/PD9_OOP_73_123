@@ -7,7 +7,7 @@ package task1;
 
 /**
  *
- * @author DELL
+ * @author hp
  */
 import java.util.Scanner;
 public class Task1 {
