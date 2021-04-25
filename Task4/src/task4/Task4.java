@@ -68,7 +68,11 @@ public class Task4 {
            return s4;
        }
 
-       String getString(){}
+       String getString(){
+          String s1;
+          String s2;
+          return s1, s2;
+       }
         
     }
   
