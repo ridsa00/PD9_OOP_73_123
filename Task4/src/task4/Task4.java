@@ -27,11 +27,13 @@ public class Task4 {
         char a = 0;
         boolean flag;  
 
+        
         MyString str3 = new MyString();
         Scanner obj = new Scanner(System.in);
         System.out.println(" 1- Enter 1 if u want to concatenate strings \n 2-Enter 2 if u want to convert string in upper case \n 3-Enter 3 if u want to convert string in lower case \n 4-Enter 4 if u want to find the length of the string \n 5-Enter 5 if u want to fing that whether a specific character exists in string or not \n");
         System.out.print(" Enter your number: ");
         input = obj.nextInt();
+        
         
         
         if (input == 1) {
@@ -44,6 +46,7 @@ public class Task4 {
             System.out.println("Concatenated String is: " + s3);
         }
         
+        
         else if(input == 2){
            obj = new Scanner(System.in);
            System.out.print("Enter the string: ");
@@ -52,6 +55,7 @@ public class Task4 {
            System.out.println("Conveted string in uper case is: " + s2);
         }
 
+        
         else if(input == 3){
            obj = new Scanner(System.in);
            System.out.print("Enter the string: ");
@@ -60,6 +64,7 @@ public class Task4 {
            System.out.println("Conveted string in lower case is: " + s2);
         }
         
+        
         else if(input == 4){
            obj = new Scanner(System.in);
            System.out.print("Enter the string: ");
@@ -67,6 +72,7 @@ public class Task4 {
            i = str3.Length(s1);
            System.out.println("Length of string is: " + i);
         }
+        
         
          else if(input == 5){
            obj = new Scanner(System.in);
@@ -77,6 +83,10 @@ public class Task4 {
            flag = str3.Contain(s1 , s2);
            System.out.println(flag);
         }
+        
+         else{
+            System.out.println("Invalid Credentials...!!!");
+         }
         
         
     }
