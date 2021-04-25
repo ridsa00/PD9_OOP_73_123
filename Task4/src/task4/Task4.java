@@ -5,6 +5,8 @@
  */
 package task4;
 
+import java.util.Scanner;
+
 /**
  *
  * @author ridsa(2020-CS-73)
@@ -16,29 +18,60 @@ public class Task4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        MyString str1 = new MyString();
+        MyString str2 = new MyString();
+         
+        Scanner obj = new Scanner(System.in);
+        System.out.print("Enter first string: ");
+        System.out.print( str1.getS1());
+        System.out.print("Enter first string: ");
+        System.out.print( str2.getS2());
+        
+        str1.Concatenation(str2);
         
     }
-
+ 
 }
 
- 
+  
   class MyString {
-       
-        String Concatenation(){
+
+     String s1;
+     String s2;
+
+    public String getS1() {
+        return s1;
+    }
+
+    public void setS1(String str1) {
+        this.s1 = str1;
+    }
+
+    public String getS2() {
+        return s2;
+    }
+
+    public void setS2(String str2) {
+        this.s2 = str2;
+    }
+
+    
+       String Concatenation(MyString s3){
 
           //String Concatenation
-           String s1 = "Ice";
-           String s2 = "Cream";
-           String s3 = s1.concat(s2);
+           s1.getString()+s2.getString();
+           s3 = s1.concat(s2);
            System.out.println(s3);
            String s4 = s1 + s2;
            System.out.println(s4);
            
            return s4;
        }
-}
 
-
+       String getString(){}
+        
+    }
+  
 
 
 
