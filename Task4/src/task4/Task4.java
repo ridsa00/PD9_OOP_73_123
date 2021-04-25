@@ -18,7 +18,7 @@ public class Task4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        MyString str1 = new MyString();
+     /*   MyString str1 = new MyString();
         MyString str2 = new MyString();
          
         Scanner obj = new Scanner(System.in);
@@ -27,14 +27,25 @@ public class Task4 {
         System.out.print("Enter first string: ");
         System.out.print( str2.getS2());
         
-        str1.Concatenation(str2);
+        str1.Concatenation(str2);*/
+    // String str1;
+   //  String str2;
+       MyString str1 = new MyString();
+        MyString str2 = new MyString();
+        Scanner obj = new Scanner(System.in);
+        System.out.print("Enter first string: ");
+            str1.Concatenation(str2);
+        System.out.print("Enter first string: ");
+        
+        
+     //   String str3 = Concatenation(str1 , str2);
         
     }
  
 }
 
   
-  class MyString {
+ /* class MyString {
 
      String s1;
      String s2;
@@ -76,8 +87,20 @@ public class Task4 {
         
     }
   
+*/
 
-
+class MyString{
+   String Concatenation(String s1 ){
+       String s2 = null;
+    
+     String s3 = s1.concat(s2);
+     System.out.println(s3);
+     String s4 = s1 + s2;
+     System.out.println(s4);
+           
+     return s4;
+  }
+}
 
 
 
