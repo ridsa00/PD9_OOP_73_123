@@ -10,9 +10,12 @@ package task2;
  * @author DELL
  */
 import java.util.Scanner;
+
 public class Task2 {
       
      public static void displayVertical(String x[]){
+         
+         
          for(String string:x){
              System.out.println(string);
          }
@@ -23,10 +26,19 @@ public class Task2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
         System.out.println("enter the sentence");
         Scanner obj=new Scanner(System.in);
+        
         String b=obj.nextLine();
-        String x[]=b.split(",");
+        
+        String x[]=b.split(" ");
+        for(int i=0; i<x.length; i++)
+        {
+            System.out.println(x[i]);
+        }
+        
+        //calling the method display vertical here
         displayVertical(x);
         }
     
