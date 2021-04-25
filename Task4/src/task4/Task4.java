@@ -18,15 +18,25 @@ public class Task4 {
         // TODO code application logic here
         
     }
-    
+
 }
 
  
-/*public class MyString extends String{
+  class MyString {
+       
+        String Concatenation(){
 
-}*/
-
-
+          //String Concatenation
+           String s1 = "Ice";
+           String s2 = "Cream";
+           String s3 = s1.concat(s2);
+           System.out.println(s3);
+           String s4 = s1 + s2;
+           System.out.println(s4);
+           
+           return s4;
+       }
+}
 
 
 
