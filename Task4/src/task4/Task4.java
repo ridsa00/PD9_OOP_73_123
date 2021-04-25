@@ -25,7 +25,7 @@ public class Task4 {
         int i = 0;
         char ch = 0;
         char a = 0;
-        boolean flag;
+        boolean flag;  
 
         MyString str3 = new MyString();
         Scanner obj = new Scanner(System.in);
@@ -83,10 +83,19 @@ public class Task4 {
  
 }
 
-  
- 
+/**
+ * this is a new class MyString 
+ * in which different methods are created
+ */
 
 class MyString {
+    
+    /**
+     * method named as Concatenation is used to add two strings
+     * @param s2
+     * @param s1
+     * @return string
+     */
 
     String Concatenation(String s2, String s1) {
 
@@ -95,11 +104,29 @@ class MyString {
         return s3;
     }
     
+    
+    /**
+     * method names as Uppercase is used to convert all 
+     * alphabets of string in upper case
+     * @param s1
+     * @return string
+     */
+    
+    
     String Uppercase(String s1) {
 
         String s2 = s1.toUpperCase();
         return s2;
     }
+    
+    
+    /**
+     * method names as Lowercase is used to convert all 
+     * alphabets of string in lower case
+     * @param s1
+     * @return string
+     */
+    
     
     String Lowercase(String s1) {
 
@@ -108,10 +135,28 @@ class MyString {
     }
     
     
+    /**
+     * method named as Length is used to measure 
+     * the length of the input string
+     * @param s1
+     * @return integer length of input string
+     */
+    
+    
+    
     int Length(String s1 ){
       return s1.length();
        
     }
+    
+    
+    /**
+     * method named as Contain is used to find whether a character
+     * exists in input string or not
+     * @param s1
+     * @param s2
+     * @return Boolean value of flag
+     */
     
     
     boolean Contain(String s1, String s2) {
