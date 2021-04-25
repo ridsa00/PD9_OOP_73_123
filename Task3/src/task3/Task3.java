@@ -18,6 +18,8 @@ public class Task3 {
     /**
      * @param args the command line arguments
      */
+    
+    
     public static void main(String[] args) {
         // TODO code application logic here
         
@@ -38,6 +40,8 @@ public class Task3 {
                 System.out.println("New string with single spaces is: " + newStr);
                 
              }
+             
+             
              else if(input == 2){
                 
                  obj = new Scanner(System.in);
@@ -49,6 +53,7 @@ public class Task3 {
                  
              }
              
+             
               else if(input == 3){
                 
                  obj = new Scanner(System.in);
@@ -58,6 +63,7 @@ public class Task3 {
                  
              }
              
+              
               else{
                 System.out.println("Invalid credentials...!!!");
               }
