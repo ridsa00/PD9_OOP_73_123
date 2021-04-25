@@ -88,19 +88,6 @@ public class Task3 {
          return s;
     }
     
-   /* static String stringEncryption(String s){
-      //  int key = 5;
-       // char[] chars = s.toCharArray();
-       String name = null;
-        System.out.print("Encrypted string is: " );
-        for( int i=0 ; i<s.length() ; i++){
-        // i = s.charAt(i)+5;
-       //  i = i+ s.charAt(i);
-       s = s +(s.charAt(i)+5);
-           System.out.print(s);         
-        }
-         System.out.print("\n");
-         return s;
-}*/
+  
 }
 
