@@ -18,30 +18,20 @@ public class Task4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-     /*   MyString str1 = new MyString();
-        MyString str2 = new MyString();
-         
-        Scanner obj = new Scanner(System.in);
-        System.out.print("Enter first string: ");
-        System.out.print( str1.getS1());
-        System.out.print("Enter first string: ");
-        System.out.print( str2.getS2());
-        
-        str1.Concatenation(str2);*/
-     String s1;
-     String s2;
-     String s3;
-     //  MyString str1 = new MyString();
-      //  MyString str2 = new MyString();
+
+        String s1;
+        String s2;
+        String s3;
+
         MyString str3 = new MyString();
         Scanner obj = new Scanner(System.in);
         System.out.print("Enter first string: ");
-             s1 = obj.nextLine();
+        s1 = obj.nextLine();
         System.out.print("Enter second string: ");
         s2 = obj.nextLine();
-        s3 = str3.Concatenation(s2, s1) ;
-        System.out.println( "Concatenated String is: " + s3);
-     //   String str3 = Concatenation(str1 , str2);
+        s3 = str3.Concatenation(s2, s1);
+        System.out.println("Concatenated String is: " + s3);
+     
         
     }
  
@@ -92,14 +82,15 @@ public class Task4 {
   
 */
 
-class MyString{
-   String Concatenation(String s2 , String s1 ){
-     
-     String s3 = s1.concat(s2);
-     s3 = s1 + " " + s2;
-   
-     return s3;
-  }
+class MyString {
+
+    String Concatenation(String s2, String s1) {
+
+        String s3 = s1.concat(s2);
+        s3 = s1 + " " + s2;
+
+        return s3;
+    }
 }
 
 
