@@ -54,7 +54,7 @@ public class Task3 {
                  obj = new Scanner(System.in);
                  System.out.print("Enter your string whom you want to  be encrypted: ");
                  String str2 = obj.nextLine();
-                 String newStr3 = stringEncryption(str2);
+                 String newStr3 = Encryption(str2);
                  
              }
              
@@ -64,22 +64,44 @@ public class Task3 {
         
     }
     
+    
     /**
-     *
+     * static method named as ridMultipleBlank() is used to
+     * replace multiple extra spaces between words
+     * with a single white space
      * @param s
-     * @return
+     * @return string
      */
+    
+    
     static String  ridMultipleBlank(String s){
         s = s.replaceAll("( )+", " ");
         return s;
     }
+    
+    /**
+     * static method named as removeInteger() is used
+     * to remove integers from the string
+     * @param s
+     * @return string
+     */
 
     static String removeInteger(String s){
         s = s.replaceAll("[0123456789]", "");
         return s;
     }
     
-   static String stringEncryption(String s){
+    
+    /**
+     * static method named as Encryption() is used to
+     * encrypt string and replace lengthy string with
+     * the code words
+     * @param s
+     * @return string
+     */
+    
+    
+   static String Encryption(String s){
         int key = 6;
         char[] chars = s.toCharArray();
         System.out.print("Encrypted string is: " );
