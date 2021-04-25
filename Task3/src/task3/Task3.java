@@ -6,6 +6,7 @@
 package task3;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
  
 
 /**
@@ -20,13 +21,25 @@ public class Task3 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Scanner obj = new Scanner(System.in);
-         System.out.println("Enter your string whose extra spaces,that you want to remove: ");
-        String str = obj.nextLine();
-        String newStr = ridMultipleBlank(str);
+         Scanner obj = new Scanner(System.in);
+        int input=0;
+         System.out.println("1-Enter 1 if you want to remove extra spaces within the input string \n 2-Enter 2 if you want to remove integers from the string \n");
+         input = obj.nextInt();
+             if(input == 1){
+                obj = new Scanner(System.in);
+                System.out.println("Enter your string whose extra spaces,that you want to remove: ");
+                String str = obj.nextLine();
+                String newStr = ridMultipleBlank(str);
+
+                System.out.println("New string with single spaces is: " + newStr);
+                
+             }
+             if(input == 2){
+             
+             }
+            
         
-         System.out.println("New string with single spaces is: " + newStr); 
-         obj.close();
+        
          
     }
     
@@ -39,5 +52,5 @@ public class Task3 {
         s = s.replaceAll("( )+", " ");
         return s;
     }
- 
+
 }
