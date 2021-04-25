@@ -22,9 +22,9 @@ public class Task4 {
 }
 
  
-public class MyString extends String{
+/*public class MyString extends String{
 
-}
+}*/
 
 
 
