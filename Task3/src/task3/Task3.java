@@ -21,13 +21,16 @@ public class Task3 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-         Scanner obj = new Scanner(System.in);
-        int input=0;
-         System.out.println("1-Enter 1 if you want to remove extra spaces within the input string \n 2-Enter 2 if you want to remove integers from the string \n");
-         input = obj.nextInt();
+        Scanner obj = new Scanner(System.in);
+        int input = 0;
+        System.out.println("1-Enter 1 if you want to remove extra spaces within the input string \n 2-Enter 2 if you want to remove integers from the string \n");
+        input = obj.nextInt();
+
+         
              if(input == 1){
+                 
                 obj = new Scanner(System.in);
-                System.out.println("Enter your string whose extra spaces,that you want to remove: ");
+                System.out.println("Enter your string whose extra spaces you want to remove: ");
                 String str = obj.nextLine();
                 String newStr = ridMultipleBlank(str);
 
@@ -35,12 +38,16 @@ public class Task3 {
                 
              }
              if(input == 2){
-             
+                
+                 obj = new Scanner(System.in);
+                 System.out.println("Enter your string whose integers you want to remove: ");
+                 String str2 = obj.nextLine();
+                 String newStr2 = removeInteger(str2);
+
+                 System.out.println("New string without integers is: " + newStr2);
+                 
              }
-            
         
-        
-         
     }
     
     /**
@@ -48,9 +55,15 @@ public class Task3 {
      * @param s
      * @return
      */
-    public static String  ridMultipleBlank(String s){
+    static String  ridMultipleBlank(String s){
         s = s.replaceAll("( )+", " ");
         return s;
     }
 
+    static String removeInteger(String s){
+        s = s.replaceAll("[0123456789]", "");
+        return s;
+    }
+    
+    
 }
