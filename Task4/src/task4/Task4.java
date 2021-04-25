@@ -83,49 +83,7 @@ public class Task4 {
 }
 
   
- /* class MyString {
-
-     String s1;
-     String s2;
-
-    public String getS1() {
-        return s1;
-    }
-
-    public void setS1(String str1) {
-        this.s1 = str1;
-    }
-
-    public String getS2() {
-        return s2;
-    }
-
-    public void setS2(String str2) {
-        this.s2 = str2;
-    }
-
-    
-       String Concatenation(MyString s3){
-
-          //String Concatenation
-           s1.getString()+s2.getString();
-           s3 = s1.concat(s2);
-           System.out.println(s3);
-           String s4 = s1 + s2;
-           System.out.println(s4);
-           
-           return s4;
-       }
-
-       String getString(){
-          String s1;
-          String s2;
-          return s1, s2;
-       }
-        
-    }
-  
-*/
+ 
 
 class MyString {
 
@@ -148,26 +106,23 @@ class MyString {
         return s2;
     }
     
+    
     int Length(String s1 ){
       return s1.length();
        
     }
     
-    boolean Contain( String s1 , String s2 ){
-        boolean flag = false ;
-      // for( int i=0 ; i<s1.length() ; i++){
-      
-          if(s1.contains(s2)){
-            // System.out.println("is string");
-            flag = true;
-          } 
-          else{
-          //  System.out.println("is not string");
-          flag = false;
-          }
-       return  flag;
-    }
     
+    boolean Contain(String s1, String s2) {
+        boolean flag = false;
+        if (s1.contains(s2)) {
+            flag = true;
+        } else {
+            flag = false;
+        }
+        return flag;
+    }
+
    
 }
 
