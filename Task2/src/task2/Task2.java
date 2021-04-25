@@ -12,11 +12,13 @@ package task2;
 import java.util.Scanner;
 public class Task2 {
       
-     // String displayVertical()
-     // {
-          
-     // }
-    /**
+     public static void displayVertical(String x[]){
+         for(String string:x){
+             System.out.println(string);
+         }
+     }
+             
+     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -24,10 +26,8 @@ public class Task2 {
         System.out.println("enter the sentence");
         Scanner obj=new Scanner(System.in);
         String b=obj.nextLine();
-        
-        
-        
-        
-    }
+        String x[]=b.split(",");
+        displayVertical(x);
+        }
     
 }
