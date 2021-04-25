@@ -7,7 +7,7 @@ package task4;
 
 /**
  *
- * @author DELL
+ * @author ridsa(2020-CS-73)
  */
 public class Task4 {
 
@@ -16,8 +16,22 @@ public class Task4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("task4");
-        System.out.println("task4///");
+        
     }
     
 }
+
+ 
+public class MyString extends String{
+
+}
+
+
+
+
+
+
+
+
+
+
