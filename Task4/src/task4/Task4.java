@@ -29,7 +29,8 @@ public class Task4 {
 
         MyString str3 = new MyString();
         Scanner obj = new Scanner(System.in);
-        System.out.println(" 1- Enter 1 if u wan5t to concatenate strings \n 2-Enter 2 if u want to convert string in upper case \n 4-Enter 4 if u want to find the length of the string");
+        System.out.println(" 1- Enter 1 if u want to concatenate strings \n 2-Enter 2 if u want to convert string in upper case \n 3-Enter 3 if u want to convert string in lower case \n 4-Enter 4 if u want to find the length of the string \n 5-Enter 5 if u want to fing that whether a specific character exists in string or not \n");
+        System.out.print(" Enter your number: ");
         input = obj.nextInt();
         
         
