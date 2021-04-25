@@ -23,7 +23,8 @@ public class Task3 {
         
         Scanner obj = new Scanner(System.in);
         int input = 0;
-        System.out.println("1-Enter 1 if you want to remove extra spaces within the input string \n 2-Enter 2 if you want to remove integers from the string \n");
+        System.out.println("1-Enter 1 if you want to remove extra spaces within the input string \n 2-Enter 2 if you want to remove integers from the string \n 3-Enter 3 if u want to encrypt a string \n");
+        System.out.print("Enter your number: ");
         input = obj.nextInt();
 
          
