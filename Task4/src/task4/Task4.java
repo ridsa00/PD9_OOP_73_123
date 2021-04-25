@@ -97,10 +97,7 @@ class MyString{
      
      String s3 = s1.concat(s2);
      s3 = s1 + " " + s2;
-  //   System.out.println(s3);
-    // String s4 = s1 + s2;
-  //   System.out.println(s4);
-           
+   
      return s3;
   }
 }
