@@ -7,7 +7,7 @@ package task2;
 
 /**
  *
- * @author hp
+ * @author amna(2020-CS-123)
  */
 import java.util.Scanner;
 

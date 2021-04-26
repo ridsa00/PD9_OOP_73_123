@@ -7,7 +7,7 @@ package task1;
 
 /**
  *
- * @author hp
+ * @author amn(2020-CS-123)
  */
 import java.util.Scanner;
 public class Task1 {
