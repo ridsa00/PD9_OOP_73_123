@@ -6,13 +6,14 @@
 package task3;
 
 import java.util.Scanner;
-import javax.swing.JOptionPane;
+ 
  
 
 /**
  *
  * @author ridsa(2020-CS-73)
  */
+
 public class Task3 {
 
     /**

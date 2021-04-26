@@ -7,6 +7,7 @@ package task4;
 
 import java.util.Scanner;
 
+
 /**
  *
  * @author ridsa(2020-CS-73)
